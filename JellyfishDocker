@@ -1,0 +1,11 @@
+FROM ubuntu:22.04
+
+# Install jellyfish
+RUN apt-get update && apt-get install -y \
+    jellyfish \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /data
+
+# Default command to show help
+CMD ["jellyfish", "--help"]
