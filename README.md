@@ -4,7 +4,7 @@ A Rust implementation of probabilistic data structures for k-mer counting in bio
 
 ## Overview
 
-`hll-rust` implements several probabilistic counters to estimate the number of distinct elements (cardinality) in large datasets, specifically focusing on k-mers in DNA sequences (FASTA files). For HyperLogLog in particular, you can read more on Wikipedia (https://en.wikipedia.org/wiki/HyperLogLog) and in the original publication by Flajolet et al. [[1]].
+`hll-rust` implements several probabilistic counters to estimate the number of distinct elements (cardinality) in large datasets, specifically focusing on k-mers in DNA sequences (FASTA files). For HyperLogLog in particular, you can read more on [Wikipedia](https://en.wikipedia.org/wiki/HyperLogLog) and in the original publication by Flajolet et al. [[1]](#references).
 
 ## Features
 
@@ -80,7 +80,7 @@ The following table compares the complexity estimates (distinct k-mers / total k
 
 ### Generating Ground Truth
 
-To generate the ground truth data using Jellyfish, we provide a script that runs the analysis in a Docker container. As prerequisite, Docker must be installed and running.
+To generate the ground truth data using Jellyfish, we provide a script that runs the analysis in a Docker container. As a prerequisite, Docker must be installed and running.
 
 To run the Jellyfish analysis with default settings (looking for data in `data/` and outputting to `jellyfish_results/`):
 
